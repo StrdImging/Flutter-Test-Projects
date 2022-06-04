@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:todoapp/screens/widgets.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,14 +15,19 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.all(24.0),
+          width: double.infinity,
+          padding: EdgeInsets.symmetric(
+            horizontal: 20.0,
+            vertical: 20.0,
+          ),
           child: Column(
             children: [
               Image(
                 image: AssetImage("assets/images/logo.png"),
               ),
+            TaskCardWidget(),
             ],
-            // crossAxisAlignment:CrossAxisAlignment.center,
+             crossAxisAlignment:CrossAxisAlignment.start,
             // mainAxisAlignment: MainAxisAlignment.center,
           ),
         ),
