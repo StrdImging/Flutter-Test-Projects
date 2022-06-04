@@ -13,7 +13,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: SafeArea(
         child: Container(
           width: double.infinity,
@@ -21,7 +20,6 @@ class _HomePageState extends State<HomePage> {
             horizontal: 20.0,
             vertical: 20.0,
           ),
-
           color: Color(0xFFF6F6F6),
           child: Stack(
             children: [
@@ -35,30 +33,25 @@ class _HomePageState extends State<HomePage> {
                       image: AssetImage("assets/images/logo.png"),
                     ),
                   ),
-                TaskCardWidget(),
+                  TaskCardWidget(),
                 ],
-                 crossAxisAlignment:CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 // mainAxisAlignment: MainAxisAlignment.center,
               ),
-               Positioned(
-                bottom:0.0,
+              Positioned(
+                bottom: 0.0,
                 right: 0.0,
                 child: Container(
                   width: 60.0,
                   height: 60.0,
                   decoration: BoxDecoration(
-                  color: Color(0xFF7349FE),
-                  borderRadius: BorderRadius.circular(20.0),
+                    color: Color(0xFF7349FE),
+                    borderRadius: BorderRadius.circular(20.0),
                   ),
-                  child: Image(
-                    
-                    image: AssetImage(
-                      "assets/images/add.png"
-                      
-                    ),
-                  ),
+                  child: Image.asset("assets/images/add.png",
+                      width: 300, height: 150, fit: BoxFit.fill),
                 ),
-              )
+              ),
             ],
           ),
         ),
