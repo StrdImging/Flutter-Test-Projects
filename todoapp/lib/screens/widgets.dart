@@ -16,11 +16,20 @@ class TaskCardWidget extends StatelessWidget {
       
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20.0)
+        borderRadius: BorderRadius.circular(20.0),
         
       ),
       
-     child: Text( 'hello world'),
+     child: Text( 
+       'Get Started',
+       style: TextStyle(
+         color: Color(0xFF211551),
+         fontSize: 22.0,
+         fontWeight: FontWeight.bold,
+         
+
+       ),
+       ),
     );
     
   }
