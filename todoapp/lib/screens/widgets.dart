@@ -20,17 +20,36 @@ class TaskCardWidget extends StatelessWidget {
         
       ),
       
-     child: Text( 
+     child: Column(
+       crossAxisAlignment: CrossAxisAlignment.start,
+       children: [
+         Text( 
        'Get Started',
        style: TextStyle(
          color: Color(0xFF211551),
          fontSize: 22.0,
          fontWeight: FontWeight.bold,
-         
+       ),
+         ),
+        Padding(
+          padding: EdgeInsets.only(
+            top: 10.0,
+          ),
+          child: Text(
+            "Hello user welcome to what todo app.",
+            style: TextStyle(
+              fontSize: 16.0,
+              color: Color(0xFF868290),
+              height: 1.5,
+            ),
+          ),
+        ), 
+      
+       ],
 
-       ),
-       ),
-    );
+     ),
+       );
+    
     
   }
 }
