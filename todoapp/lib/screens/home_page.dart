@@ -24,8 +24,13 @@ class _HomePageState extends State<HomePage> {
           color: Color(0xFFF6F6F6),
           child: Column(
             children: [
-              Image(
-                image: AssetImage("assets/images/logo.png"),
+              Container(
+                margin: EdgeInsets.only(
+                  bottom: 32.0,
+                ),
+                child: Image(
+                  image: AssetImage("assets/images/logo.png"),
+                ),
               ),
             TaskCardWidget(),
             ],
