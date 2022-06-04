@@ -20,6 +20,8 @@ class _HomePageState extends State<HomePage> {
             horizontal: 20.0,
             vertical: 20.0,
           ),
+
+          color: Color(0xFFF6F6F6),
           child: Column(
             children: [
               Image(
