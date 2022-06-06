@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:todoapp/screens/newtask.dart';
 import 'package:todoapp/screens/widgets.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,16 +42,26 @@ class _HomePageState extends State<HomePage> {
               Positioned(
                 bottom: 0.0,
                 right: 0.0,
-                child: Container(
-                  width: 60.0,
-                  height: 60.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF7349FE),
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: Image.asset("assets/images/add.png",
-                      width: 300, height: 150, fit: BoxFit.fill),
-                ),
+                
+                  
+                  child:Row(
+                    children:<Widget>[
+                      RaisedButton(
+                        onPressed: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) =>  NewTask ()),
+
+                          );
+                        },
+                        textColor: Colors.white,
+                        color: Colors.purple,
+                        child: Text("add task")
+
+                      )
+                    ]
+                  )
+                
               ),
             ],
           ),
