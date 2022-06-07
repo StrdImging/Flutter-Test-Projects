@@ -16,7 +16,7 @@ class TodosProvider extends ChangeNotifier {
     ),
     Todo(
       createdTime: DateTime.now(),
-      title: 'Plan family trip to Norway',
+      title: 'Plan family trip',
       description: '''- Rent some hotels
 - Rent a car
 - Pack suitcase''',
@@ -24,12 +24,12 @@ class TodosProvider extends ChangeNotifier {
     ),
     Todo(
       createdTime: DateTime.now(),
-      title: 'Walk the Dog 🐕',
+      title: 'study',
       id: ""
     ),
     Todo(
       createdTime: DateTime.now(),
-      title: 'Plan Jacobs birthday party 🎉🥳',
+      title: 'Plan birthday party ',
       id: ""
     ),
   ];
