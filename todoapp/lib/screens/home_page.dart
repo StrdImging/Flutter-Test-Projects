@@ -39,30 +39,7 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 // mainAxisAlignment: MainAxisAlignment.center,
               ),
-              Positioned(
-                bottom: 0.0,
-                right: 0.0,
-                
-                  
-                  child:Row(
-                    children:<Widget>[
-                      RaisedButton(
-                        onPressed: (){
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) =>  NewTask ()),
-
-                          );
-                        },
-                        textColor: Colors.white,
-                        color: Colors.purple,
-                        child: Text("add task")
-
-                      )
-                    ]
-                  )
-                
-              ),
+          
             ],
           ),
         ),
