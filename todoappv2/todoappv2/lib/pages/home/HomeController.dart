@@ -13,20 +13,20 @@ class _HomeControllerState extends State<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-         child: TextButton(
-             
-         style: ButtonStyle(
-           foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-           ),
-          onPressed: () { },
-           child: Text('Add New Task'),
-            )
-        ),
       appBar:AppBar(
         title: const Text(" ToDo List"),
         )
+        
+       floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.blue,
+        child: const Icon(Icons.add),
 
+       
+      // body: SafeArea( 
+      //   ),
+      
+     
     );
   }
 }
