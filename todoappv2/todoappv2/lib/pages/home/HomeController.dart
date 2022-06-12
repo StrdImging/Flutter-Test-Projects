@@ -22,7 +22,17 @@ class _HomeControllerState extends State<HomeController> {
         backgroundColor: Colors.blue,
         child: const Icon(Icons.add),
 
-       
+       body:Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Container(
+            child: Text("ALL TASKS"),
+          )
+        ],
+        ),
+  
+)
       // body: SafeArea( 
       //   ),
       
