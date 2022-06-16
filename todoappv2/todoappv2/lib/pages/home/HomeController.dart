@@ -15,7 +15,7 @@ class _HomeControllerState extends State<HomeController> {
         backgroundColor: Colors.blue,
         child: const Icon(Icons.add),
         ),
-       body:ListView(
+       body:Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -23,7 +23,7 @@ class _HomeControllerState extends State<HomeController> {
               title: Center(child: Text("Your All Tasks")),
               subtitle: Center(child: Text("see all tasks at one glance")),
               onLongPress: (){},
-              tileColor: Colors.amber,
+              tileColor: Colors.green,
             ),
           ),
         ],
